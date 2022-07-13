@@ -5,11 +5,22 @@
   <title>主页-homura博客</title>
   <link rel="shortcut icon" href=" static/favicon.ico" />
  </head>
- <body style="margin: 0px; background: #0e0e0e; height: 100%">
-  <img style="display: block;
-  -webkit-user-select: none;
-  margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);
-  transition: background-color 300ms;"
-       src = 'https://cdn.jsdelivr.net/gh/homura1521/image@master/Anime/xxx.52qsg86tvm40.png' />
+ <body>
+<!--  <img src = 'https://cdn.jsdelivr.net/gh/homura1521/image@master/Anime/xxx.52qsg86tvm40.png' />-->
+  <script type="text/javascript">
+   //<!CDATA[
+   var pic = [];
+   pic[0] = "https://cdn.jsdelivr.net/gh/homura1521/image@master/Anime/xxx.52qsg86tvm40.png";
+   pic[1] = "https://i.pximg.net/img-original/img/2022/01/19/23/23/58/95638409_p0.png";
+   pic[2] = "https://i.pximg.net/img-original/img/2022/07/09/09/15/37/99597794_p0.png";
+   pic[3] = "https://i.pximg.net/img-original/img/2022/07/09/03/49/32/99595253_p0.png";
+
+   var randomBgIndex = Math.round( Math.random() * 3 );
+
+   //输出随机的背景图
+   //document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% 0}</style>');
+   document.write("<img src=" + pic[randomBgIndex] + " width='1000' align='center'>")
+   //]]>
+  </script>
  </body>
 </html>
