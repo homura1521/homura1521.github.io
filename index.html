@@ -16,7 +16,7 @@
    var randomBgIndex = Math.round( Math.random() * 3 );
 
    //输出随机的背景图
-   document.write('<style>body{background:url(' + pic[randomBgIndex] + ') no-repeat 0% 0}</style>');
+   document.write('<style>*{style="margin: 0;padding: 0"} body{background:url(' + pic[randomBgIndex] + ') no-repeat 0% 0 }</style>');
    //document.write("<img src=" + pic[randomBgIndex] + " width='1000' class='rounded mx-auto d-block' align='center'>")
   </script>
  </body>
